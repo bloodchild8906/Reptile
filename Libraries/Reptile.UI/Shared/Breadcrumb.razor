@@ -1,0 +1,20 @@
+﻿@inherits ProComponentBase
+
+@using Reptile.UI.Data
+@implements IDisposable
+
+@if (_items.Count > 0)
+{
+    <a class="text-decoration-none" href="javascript:history.back(-1)">
+        <MIcon Size=20 Color="neutral-lighten-2">mdi-arrow-left</MIcon>
+    </a>
+    @DividerContent
+    <MBreadcrumbs Items="_items" Routable Class="pa-0" DividerContent="DividerContent">
+        <ItemContent>
+            <a class="text-decoration-none @(context.Disabled ? "text-subtitle2 neutral-lighten-2--text pointer-events-none" : "text-body2")"
+               href="@context.Href">
+                @T(context.Text)
+            </a>
+        </ItemContent>
+    </MBreadcrumbs>
+}

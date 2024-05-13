@@ -1,0 +1,41 @@
+﻿@page "/app/WebScraper/{FilterText?}"
+
+<CascadingValue Value="this">
+    <div style="padding: 10px">
+        <MRow Class="no-gutters">
+            <MCol Sm="2">
+                <WebScraperNav />
+            </MCol>
+            <MCol>
+                <div class="content-container">
+                    <MToolbar Dense Elevation="0" Class="rounded-2" Height="60">
+                        <MTextField TValue="string" Class="task-search mx-4"  Placeholder="Search Task" @bind-Value=InputText>
+                            <PrependContent>
+                                <MIcon Small Class="mt-1">fa fa-search</MIcon>
+                            </PrependContent>
+                        </MTextField>
+                    </MToolbar>
+                    <MList Dense Class="rounded-4 mt-6" Style="overflow-y: auto;min-height: 25vh">
+                        @foreach (var item in _displayList)
+                        {
+                        <MListItem Dense Link>
+                            <MListItemContent Class="text-body neutral-lighten-2--text">@item.Title</MListItemContent>
+                            <MListItemContent Class="text-body neutral-lighten-2--text">@item.Url</MListItemContent>
+                            <MListItemContent>
+                                <MButton Class="red" @onclick="@(() => DeleteItem(item))">Delete</MButton>
+                            </MListItemContent>
+                            <MDivider Class="border-b-solid" />
+                        </MListItem>
+                        }
+                    </MList>
+                    <MProgressLinear Stream Active Value="@_scrapingProgress" />
+                    <MToolbar>
+                        <MButton Class="green" @onclick="StartScraping">Start Scraping</MButton>
+                        <MLabel>@content</MLabel>
+                    </MToolbar>
+                </div>
+            </MCol>
+        </MRow>
+    </div>
+</CascadingValue>
+

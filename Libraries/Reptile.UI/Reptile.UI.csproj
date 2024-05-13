@@ -1,0 +1,181 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Configurations>Debug;Release;Ngrok</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <SupportedPlatform Include="browser" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BlazorComponent" Version="1.5.0" />
+        <PackageReference Include="Masa.Blazor" Version="1.5.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)\Libraries\Reptile.AI\Reptile.AI.csproj" />
+        <ProjectReference Include="..\Reptile.DataDive\Reptile.DataDive.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.4\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.4\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Content Include="wwwroot\**\*.*" />
+           
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\css\app.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\css\all.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-brands-400.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-brands-400.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-regular-400.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-regular-400.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-solid-900.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-solid-900.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-v4compatibility.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\fontawesome\v6.4.0\webfonts\fa-v4compatibility.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\masa-blazor-pro.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\materialdesign\v7.1.96\css\materialdesignicons.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\materialdesign\v7.1.96\css\materialdesignicons.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\materialdesign\v7.1.96\fonts\materialdesignicons-webfont.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\materialdesign\v7.1.96\fonts\materialdesignicons-webfont.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\materialdesign\v7.1.96\fonts\materialdesignicons-webfont.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\materialdesign\v7.1.96\fonts\materialdesignicons-webfont.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\material\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\material\icons.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\spinkit.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\i18n\en-US.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\i18n\supportedCultures.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\i18n\zh-CN.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\analytics\json.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\analytics\left.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\analytics\right.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\1.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\10.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\10.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\11.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\11.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\12.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\12.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\13.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\13.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\14.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\14.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\15.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\15.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\16.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\16.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\17.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\17.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\18.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\18.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\19.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\19.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\2.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\20.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\20.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\21.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\21.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\22.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\22.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\23.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\23.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\24.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\24.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\25.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\25.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\26.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\26.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\27.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\27.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\28.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\29.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\3.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\30.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\31.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\32.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\4.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\5.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\5.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\6.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\6.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\7.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\7.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\8.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\8.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\9.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\apps-eCommerce\9.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\auth\forgot-password-v2.9faba3c1.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\auth\register-v2.0a9e487c.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\1.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\10.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\11.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\12.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\13.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\14.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\2.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\3.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\4.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\7.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\8.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar\9.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\eCommerce\rectangle.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\eCommerce\trophy.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\login\2873.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\login\Gxwd.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\login\left.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\mainLayout\logo-en.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\mainLayout\logo.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\status\401.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\status\404.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\status\500.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\echarts\5.1.1\echarts.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\nav\nav.json" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Pages\Dashboard\Analytics.razor" />
+      <UpToDateCheckInput Remove="Pages\Dashboard\ECommerce.razor" />
+      <UpToDateCheckInput Remove="Pages\App\Invoice\Add.razor" />
+      <UpToDateCheckInput Remove="Pages\App\Invoice\Components\AddPayment.razor" />
+      <UpToDateCheckInput Remove="Pages\App\Invoice\Components\InvoiceList.razor" />
+      <UpToDateCheckInput Remove="Pages\App\Invoice\Components\SendInvoice.razor" />
+      <UpToDateCheckInput Remove="Pages\App\Invoice\Edit.razor" />
+      <UpToDateCheckInput Remove="Pages\App\Invoice\List.razor" />
+      <UpToDateCheckInput Remove="Pages\App\Invoice\Preview.razor" />
+      <UpToDateCheckInput Remove="Pages\Others\AccountSettings\AccountSettings.razor" />
+    </ItemGroup>
+
+
+
+    <PropertyGroup>
+        <DefaultItemExcludes>$(DefaultItemsExclude);Components\**\*</DefaultItemExcludes>
+    </PropertyGroup>
+   
+
+</Project>

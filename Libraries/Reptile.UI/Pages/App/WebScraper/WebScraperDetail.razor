@@ -1,0 +1,20 @@
+﻿<MNavigationDrawer Fixed Temporary Right Value=Value ValueChanged=ValueChanged Width="465">
+    <MToolbar Style="width: 100%;" Absolute Elevation=0 Class="px-6">
+        <span>Add Task</span>
+        <MSpacer></MSpacer>
+        <MButton Icon OnClick="HideNavigationDrawer">
+            <MIcon>mdi-close</MIcon>
+        </MButton>
+    </MToolbar>
+    <MForm @ref="_mForm" Model="_selectData" Class="pt-16" EnableValidation>
+        <MTextField  Class="mx-6 mt-6 " @bind-Value=_selectData.Title Label="Collection" Outlined Clearable></MTextField>
+        <MTextarea Class="mx-6 "  Outlined Label="Url" Type="Url" @bind-Value=_selectData.Url></MTextarea>
+        <div style="position:fixed;bottom:48px;right:24px;">
+           <MButton Color="primary " Dark OnClick="()=>AddAsync(context.EditContext)">Add</MButton>
+        </div>
+    </MForm>
+</MNavigationDrawer>
+
+@code {
+    bool _dueDateMenu;
+}

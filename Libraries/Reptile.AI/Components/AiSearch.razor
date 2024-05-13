@@ -1,0 +1,18 @@
+@if (loading)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <input @bind="SearchQuery"/>
+    <button @onclick="PerformSearch" class="btn-primary">Search</button>
+
+    if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="error-message">@errorMessage</div>
+    }
+
+    <div>@answer</div>
+}

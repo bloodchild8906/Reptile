@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+		<Configurations>Debug;Release;Ngrok</Configurations>
+		<Platforms>AnyCPU</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+	<ItemGroup>
+		<InternalsVisibleTo Include="$(AssemblyName).Tests" />
+		<InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="AzureEntityServices.Tables" Version="1.1.3" />
+		<PackageReference Include="Common.HttpClients" Version="1.2.1" />
+		<PackageReference Include="CoreHelpers.WindowsAzure.Storage.Table" Version="6.3.2" />
+		<PackageReference Include="Masa.Blazor" Version="1.5.0" />
+		<PackageReference Include="BlazorComponent" Version="1.5.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.22.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="Components\" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Reference Include="Reptile.DataDive">
+	    <HintPath>..\..\Integration\Reptile.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\Reptile.DataDive.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

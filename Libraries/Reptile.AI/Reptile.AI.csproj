@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <PackageId>Reptile.AI</PackageId>
+        <Configurations>Debug;Release;Ngrok</Configurations>
+        <Platforms>AnyCPU</Platforms>
+
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <SupportedPlatform Include="browser" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Masa.Blazor" Version="1.5.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+        <PackageReference Include="OpenAiNg" Version="2.3.3" />
+    </ItemGroup>
+    <ItemGroup>
+        <InternalsVisibleTo Include="$(AssemblyName).Tests" /> <!-- [assembly: InternalsVisibleTo("ClassLibrary1.Custom")] -->
+        <InternalsVisibleTo Include="DynamicProxyGenAssembly2" /> <!-- [assembly: InternalsVisibleTo("ClassLibrary1.Custom")] -->
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = Reptile.UI
+build_property.RootNamespace = Reptile.UI
+build_property.ProjectDir = X:\Code\Work\Reptile\Reptile\Libraries\Reptile.UI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = X:\Code\Work\Reptile\Reptile\Libraries\Reptile.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Pages/App/WebScraper/WebScraper.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwXFdlYlNjcmFwZXJcV2ViU2NyYXBlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Pages/App/WebScraper/WebScraperDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwXFdlYlNjcmFwZXJcV2ViU2NyYXBlckRldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Pages/App/WebScraper/WebScraperNav.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwXFdlYlNjcmFwZXJcV2ViU2NyYXBlck5hdi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Pages/Home/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Pages/Others/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzXEVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Pages/Others/NotAuthorized.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzXE5vdEF1dGhvcml6ZWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Pages/Others/NotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJzXE5vdEZvdW5kLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Shared/Breadcrumb.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJyZWFkY3J1bWIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Shared/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVtcHR5TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Shared/Language.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExhbmd1YWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Shared/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Shared/Navigation.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdmlnYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/Shared/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNldHRpbmdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[X:/Code/Work/Reptile/Reptile/Libraries/Reptile.UI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

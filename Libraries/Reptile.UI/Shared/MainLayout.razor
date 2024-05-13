@@ -1,0 +1,23 @@
+﻿@using Reptile.UI.Data
+@inherits LayoutComponentBase
+@inject GlobalConfig GlobalConfig
+
+<MApp>
+    <PPageTabsProvider>
+        <CascadingValue Value="GlobalConfig.Culture.Name" Name="CultureName">
+            <MAppBar Elevation=0 App Height="100" Class="default-app-bar mx-6">
+                <div class="default-app-bar__actions @PageModeClass">
+                    <MSpacer/>
+                    <MIcon Size=20 Class="ml-5" Color="neutral-lighten-3" OnClick="() => _showSetting = true">mdi-cog-outline</MIcon>
+                </div>
+               </MAppBar>
+            <Navigation/>
+            <MMain Class="fill-lighten-1">
+                <div class="">
+                   @Body
+                </div>
+            </MMain>
+            <Settings @bind-PageModel="_pageTab" @bind-Show="_showSetting" />
+        </CascadingValue>
+    </PPageTabsProvider>
+</MApp>
